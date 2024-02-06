@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>surveyform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">by taking this survey, you can help us
+      improve the platform</p>
+    <form id="survey-form">
+        <div class="input-element">
+            <label id="name-label">
+                Name:
+                <input id="name" required type="text" placeholder="jack">
+            </label>
+            <label id="email-label">
+                Email:
+                <input id="email" required type="email" placeholder="example@gmail.com">
+            </label>
+            <label id="number-label">
+                Age (optional):
+                <input id="number" required type="number" min="10" max="100" placeholder="20">
+            </label>
+            <div id="input-element">
+                <label id="select-label" for="dropdown">
+                Select your current role:
+                <select id="dropdown" name="dropdown">
+                    <option>Select your role</option>
+                    <option>Student</option>
+                    <option>Full time job</option>
+                    <option>prefer not to say</option>
+                    <option>other</option>
+                </select>
+                </label>
+            </div>
+            <div class="input-element">
+            <label>Would you recommend freeCodeCamp to a friend?</label>
+            <label id="yes-button-label" >
+                <input id="idea-radio" type="radio" value="yes-button" checked name="idea-radio" class="inline"> Yes
+            </label>
+            <label id="maybe-button-label" >
+                <input id="idea-radio" type="radio" value="maybe-button" name="idea-radio" class="inline"> Maybe
+            </label>
+            <label id="no-button-label" >
+                <input id="idea-radio" type="radio" value="no-button" name="idea-radio" class="inline"> Not Sure
+            </label>
+            </div>
+        <label>Any suggestions to improve the platform? (Check all that apply)</label>
+            <label id="ideas">
+                <input type="checkbox" value="checkbox" name="ckeckboxes1" class="inline"> web development
+            </label>
+            <label id="ideas2">
+                <input type="checkbox" value="checkbox" name="ckeckboxes2" class="inline"> Python 
+            </label>
+            <label id="ideas3">
+                <input type="checkbox" name="ckeckboxes3" value="checkbox" class="inline"> other
+            </label>
+        </div>
+        <div class="input-element">
+            <label id="suggestions">Any other suggestions?tell us!<textarea id="suggestions" cols="40" rows="4" name="suggestions" placeholder="weite your suggestions right here">
+
+            </textarea></label>
+
+                <button id="submit" type="submit" name="submit">submit</button>
+
+        </div>
+    </form>
+  </body>
+</html>
